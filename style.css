@@ -37,6 +37,10 @@ a:active {
     color: inherit;
 }
 
+li {
+    list-style-type: none;
+}
+
 /* Navigation bar styling */
 
 nav {
@@ -67,6 +71,7 @@ nav {
     width: 48px;
     margin: 8px 0;
     background-color: #1B1B19;
+    transition: all ease-in 0.2s;
 }
 
 .nav-side {
@@ -128,6 +133,14 @@ nav {
 
 nav :checked~.nav-links {
     left: 96px;
+}
+
+nav :checked~#hamburger .line:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+nav :checked~#hamburger .line:nth-child(2) {
+    transform: translateY(-9px) rotate(-45deg);
 }
 
 .container {
@@ -266,4 +279,87 @@ nav :checked~.nav-links {
     font-size: 1.5rem;
     margin-top: 48px;
     margin-bottom: 64px;
+}
+
+/* Styling Article 1 */
+.article {
+    margin: 64px auto;
+    width: 896px;
+}
+
+#article1 header {
+    display: flex;
+}
+
+.return {
+    padding: 47.5px 13px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.return img {
+    width: 24px;
+}
+
+.article header h1 {
+    font-family: 'Emberly', serif;
+    font-size: 4rem;
+    margin-left: 24px;
+}
+
+.article .article-info {
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.article .article-info p {
+    margin-right: 32px;
+    font-size: 1rem;
+}
+
+.article p {
+    margin-bottom: 16px;
+    font-size: 1.25rem;
+}
+
+table {
+    font-size: 1.25rem;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #1B1B19;
+    color: #C4BDB3;
+    padding: 16px 0;
+}
+
+tr td {
+    border-right: 1px solid black;
+}
+
+td {
+    padding: 16px 24px;
+}
+
+td li {
+    margin-bottom: 16px;
+}
+
+/* Styling Article 2 */
+article {
+    margin-bottom: 48px;
+}
+
+article h2 {
+    margin-bottom: 16px;
+}
+
+#article1 ul li {
+    list-style-type: circle;
+    font-size: 1.25rem;
+    margin-left: 24px;
 }
