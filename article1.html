@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <input id="nav-toggle" type="checkbox">
+            <label id="hamburger" for="nav-toggle">
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./article.html">Articles</a></li>
+                <li><a href="">Projects</a></li>
+            </ul>
+            <div class="nav-side">
+                <h1><a href="./index.html">Pramanarendra's &nbsp;&nbsp;&nbsp; Portfolio</a></h1>
+                <p>2022</p>
+            </div>
+        </nav>
+
+        <header>
+            <a class="return">
+                <img src="./img/arrow icon.png" alt="arrow icon">
+            </a>
+            <h1>Tailwind vs Bootstrap <br>
+                Which One is The Better Framework?
+            </h1>
+            <div class="article-info">
+                <p class="topic"></p>
+                <p class="date"></p>
+            </div>
+        </header>
+
+        <article>
+            <p>In web development, cascading style sheets (CSS) are used to style HTML. You can write vanilla CSS, use a
+                CSS framework, use a preprocessor like Sass, or use a combination of all three to style your webpage.
+                There are many different ways to use CSS and many tools to pick from. You might have heard of Bootstrap
+                or Tailwind CSS being mentioned here and there while looking for a framework or tool to use in your
+                project. They’re both CSS frameworks that can help speed up production time — but between these two,
+                which one should you use?</p>
+            <p>Bootstrap has UI components baked into it, so all you have to do is add your content and flavor to it.
+                Bootstrap’s utility and layout classes provide you with everything you need to style a responsive
+                webpage. With Tailwind, however, you are much more involved in styling the webpage because you end up
+                having to create your own components using the utility classes that the framework offers.</p>
+        </article>
+
+        <table>
+            <tr>
+                <th>Bootsrtap</th>
+                <th>Tailwind</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Comes with responsive layouts, components, and utility classes</li>
+                        <li>Less flexible than Tailwind</li>
+                        <li>Larger file size than Tailwind due to its required files</li>
+                        <li>Has been around much longer than Tailwind and is one of the most popular frameworks</li>
+                        <li>Critics say that websites built using Bootstrap look similar</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Comes with a lot more utility classes than Bootstrap</li>
+                        <li>Core does not have components or layouts classes</li>
+                        <li>More flexible than Bootstrap</li>
+                        <li>Can reduce the file size using PurgeCSS to remove unused classes </li>
+                        <li>A newer framework that is gaining popularity</li>
+                        <li>Critics say that using Tailwind CSS makes your code difficult to read</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

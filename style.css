@@ -1,0 +1,269 @@
+/* import font */
+
+@font-face {
+    font-family: 'Emberly';
+    src: url('./font/Emberly-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Emberly';
+    src: url('./font/Emberly-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* HTML reset & default style */
+
+html {
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    background-color: #C4BDB3;
+    color: #1B1B19;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation bar styling */
+
+nav {
+    min-width: 96px;
+    height: 100vh;
+    border-right: 1px solid black;
+    position: fixed;
+}
+
+#nav-toggle {
+    position: absolute;
+    top: -100px;
+}
+
+#hamburger {
+    height: 96px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+.line {
+    height: 1px;
+    width: 48px;
+    margin: 8px 0;
+    background-color: #1B1B19;
+}
+
+.nav-side {
+    width: 100%;
+    height: 84vh;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Emberly', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav-side h1 {
+    font-size: 1.5rem;
+    margin-bottom: 64px;
+}
+
+.nav-side p {
+    padding: 8px;
+    padding-left: 6px;
+    background-color: #B73C12;
+    color: #C4BDB3;
+    border-radius: 8px;
+}
+
+.nav-links {
+    font-family: 'Emberly', serif;
+    text-transform: uppercase;
+    font-size: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B1B19;
+    color: #C4BDB3;
+    position: fixed;
+    left: 100%;
+    list-style: none;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    transition: all ease 0.2s;
+}
+
+.nav-links li {
+    margin: 24px;
+}
+
+.nav-links li a {
+    transition: all ease-in 0.2s;
+}
+
+.nav-links li a:hover {
+    color: #B73C12;
+}
+
+nav :checked~.nav-links {
+    left: 96px;
+}
+
+.container {
+    display: flex;
+}
+
+/* Home page styling */
+
+#home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-text {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-right: 96px;
+}
+
+.emphasis {
+    font-family: 'Emberly', serif;
+    font-weight: 700;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.home-img {
+    width: 574px;
+    height: 636px;
+    margin-top: 25px;
+}
+
+.home-btn {
+    font-family: 'Emberly', serif;
+    font-weight: 900;
+    font-size: 3rem;
+    padding: 16px;
+    margin: 72px 0;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+    color: #C4BDB3;
+    background-color: #B73C12;
+    border: 0;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+}
+
+.home-btn:hover {
+    background-color: #1B1B19;
+    color: #B73C12;
+}
+
+/* About page styling */
+#about {
+    display: flex;
+    margin-right: 64px;
+    margin-left: 160px;
+    justify-content: space-around;
+    height: 100vh;
+    z-index: -1;
+}
+
+.about-img {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.about-img img {
+    width: 496px;
+    height: 642px;
+}
+
+.about-img h1 {
+    font-family: 'Emberly', serif;
+    color: #B73C12;
+    font-size: 8rem;
+    position: absolute;
+    bottom: 24px;
+    right: -200px;
+}
+
+.about-text {
+    margin-top: 100px;
+    margin-left: 90px;
+}
+
+.about-text p {
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+/* Article page styling */
+
+#article {
+    width: 100%;
+    margin: 64px;
+    margin-left: 160px;
+}
+
+#article h1 {
+    font-family: 'Emberly', serif;
+    font-size: 4rem;
+    margin-bottom: 16px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    border: 1px solid black;
+    padding: 32px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    width: 363px;
+    margin: 32px 0;
+}
+
+.card img {
+    width: 363px;
+    height: 323px;
+    background-color: red;
+}
+
+.card-title {
+    width: 363px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 48px;
+    margin-bottom: 64px;
+}
