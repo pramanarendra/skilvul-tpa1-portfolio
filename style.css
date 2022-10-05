@@ -1,4 +1,4 @@
-/* import font */
+/*===== Import Font =====*/
 
 @font-face {
     font-family: 'Emberly';
@@ -14,7 +14,7 @@
     font-style: normal;
 }
 
-/* HTML reset & default style */
+/*===== HTML Reset & Default Style =====*/
 
 html {
     box-sizing: border-box;
@@ -41,7 +41,7 @@ li {
     list-style-type: none;
 }
 
-/* Navigation bar styling */
+/*===== Navigation Bar Styling =====*/
 
 nav {
     min-width: 96px;
@@ -147,10 +147,11 @@ nav :checked~#hamburger .line:nth-child(2) {
     display: flex;
 }
 
-/* Home page styling */
+/*===== Home Page Styling =====*/
 
 #home {
     width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,14 +196,14 @@ nav :checked~#hamburger .line:nth-child(2) {
     color: #B73C12;
 }
 
-/* About page styling */
+/*===== About Page Styling =====*/
 #about {
     display: flex;
     margin-right: 64px;
     margin-left: 160px;
     justify-content: space-around;
     height: 100vh;
-    z-index: -1;
+    width: 100%;
 }
 
 .about-img {
@@ -210,6 +211,7 @@ nav :checked~#hamburger .line:nth-child(2) {
     height: 100%;
     display: flex;
     align-items: flex-end;
+    z-index: -1;
 }
 
 .about-img img {
@@ -236,12 +238,18 @@ nav :checked~#hamburger .line:nth-child(2) {
     margin-bottom: 25px;
 }
 
-/* Article page styling */
+/*===== Article Page Styling =====*/
 
 #article {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    margin: 64px;
-    margin-left: 160px;
+    margin-left: 96px;
+    height: 100vh;
+}
+
+.article-container {
+    margin: auto;
 }
 
 #article h1 {
@@ -255,6 +263,10 @@ nav :checked~#hamburger .line:nth-child(2) {
     justify-content: space-between;
 }
 
+.card-container .card:nth-child(2) {
+    margin: 0 16px;
+}
+
 .card {
     border: 1px solid black;
     padding: 32px;
@@ -264,7 +276,7 @@ nav :checked~#hamburger .line:nth-child(2) {
     display: flex;
     justify-content: space-between;
     width: 363px;
-    margin: 32px 0;
+    margin: 16px 0;
 }
 
 .card img {
@@ -277,11 +289,11 @@ nav :checked~#hamburger .line:nth-child(2) {
     width: 363px;
     font-weight: 700;
     font-size: 1.5rem;
-    margin-top: 48px;
-    margin-bottom: 64px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
-/* Styling Article 1 */
+/*===== Article 1 Styling =====*/
 .article {
     margin: 64px auto;
     width: 896px;
@@ -349,7 +361,7 @@ td li {
     margin-bottom: 16px;
 }
 
-/* Styling Article 2 */
+/*===== Article 2 & 3 Styling =====*/
 article {
     margin-bottom: 48px;
 }
@@ -362,4 +374,64 @@ article h2 {
     list-style-type: circle;
     font-size: 1.25rem;
     margin-left: 24px;
+}
+
+/*===== Projects Page Styling =====*/
+#projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 96px;
+    margin-bottom: 96px;
+    padding: 32px;
+}
+
+.projects-container {
+    margin: auto;
+}
+
+#projects h1 {
+    font-family: 'Emberly', serif;
+    font-size: 4rem;
+    margin-bottom: 16px;
+}
+
+#projects .illustration {
+    display: flex;
+    justify-content: space-between;
+}
+
+#projects .illustration .card img {
+    width: 363px;
+    height: 363px;
+}
+
+#projects .illustration .card h2 {
+    width: 363px;
+}
+
+#projects .photography,
+#projects .website {
+    padding: 32px;
+    border: 1px solid black;
+    margin-top: 32px;
+    text-align: center;
+}
+
+#projects .photography img,
+#projects .website img {
+    width: 1280px;
+    margin-bottom: 32px;
+}
+
+#projects .photography h2,
+#projects .website h2 {
+    font-family: 'Emberly', serif;
+    font-size: 8rem;
+    color: #B73C12;
+}
+
+#projects .photography p,
+#projects .website p {
+    font-size: 2rem;
 }
