@@ -48,6 +48,7 @@ nav {
     height: 100vh;
     border-right: 1px solid black;
     position: fixed;
+    z-index: 2;
 }
 
 #nav-toggle {
@@ -211,7 +212,6 @@ nav :checked~#hamburger .line:nth-child(2) {
     height: 100%;
     display: flex;
     align-items: flex-end;
-    z-index: -1;
 }
 
 .about-img img {
@@ -348,7 +348,7 @@ th {
     padding: 16px 0;
 }
 
-tr td {
+tr td:first-child {
     border-right: 1px solid black;
 }
 
@@ -398,6 +398,15 @@ article h2 {
 #projects .illustration {
     display: flex;
     justify-content: space-between;
+}
+
+#projects img {
+    filter: grayscale(100%);
+    transition: all ease-in 0.2s;
+}
+
+#projects img:hover {
+    filter: grayscale(0);
 }
 
 #projects .illustration .card img {
