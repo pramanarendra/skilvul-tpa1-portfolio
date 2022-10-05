@@ -282,7 +282,6 @@ nav :checked~#hamburger .line:nth-child(2) {
 .card img {
     width: 363px;
     height: 323px;
-    background-color: red;
 }
 
 .card-title {
